@@ -14,4 +14,8 @@
     - `DELETE FROM WHERE`
     - `UPDATE SET WHERE`
 
-- [Day03. 데이터 가져오기]()
+- [Day03. 데이터 가져오기](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day03/sql_day03.md)
+  - `SELECT`, `FROM`
+  - 별명 붙이기: `ALIAS`
+  - 데이터 일부만 가져오기: `LIMIT`
+  - 중복 제거: `DISTINCT`

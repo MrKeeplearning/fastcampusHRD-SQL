@@ -46,7 +46,7 @@ FROM [테이블 이름];
 - 만약 입력한 숫자가 전체 row 수보다 크다면, 현재 최대 row까지만 가져온다.
 
 <p align="center">
-  <img src="/src/resources/day03_limit.png" width="600">
+  <img src="/src/resources/day03_limit.png" width="500">
 </p>
 
 ```mysql
@@ -66,7 +66,7 @@ LIMIT 2;
 - SELECT 절에 위치해서 컬럼의 유일한 값들을 가져온다.
 
 <p align="center">
-  <img src="/src/resources/day03_distinct.png" width="600">
+  <img src="/src/resources/day03_distinct.png" width="500">
 </p>
 
 - 위의 테이블에서 `type` 컬럼에는 `electric` 이라는 value가 중복된다.
@@ -77,5 +77,5 @@ select distinct type from pokemon.mypokemon;
 ```
 
 <p align="center">
-  <img src="/src/resources/day03_distinct2.png" width="600">
+  <img src="/src/resources/day03_distinct2.png">
 </p>
