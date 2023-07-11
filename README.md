@@ -1,5 +1,8 @@
 # fastcampusHRD-SQL
-패스트캠퍼스 SQL 데이터 분석 첫걸음
+
+'패스트캠퍼스 SQL 데이터 분석 첫걸음' 학습 내용 정리
+
+<br/>
 
 - [Day02. 데이터베이스 다루기](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day02/sql_day02.md)
   - 데이터 타입: 숫자형, 문자형, 날짜형
