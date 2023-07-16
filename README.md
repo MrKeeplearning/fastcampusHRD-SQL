@@ -24,3 +24,10 @@
   - `WHERE`, `BETWEEN`, `IN`
   - `LIKE`의 와일드카드
   - `IS NULL` `IS NOT NULL`
+
+- [Day05. 원하는 데이터 만들기](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day05/sql_day05.md)
+  - 정렬: `ORDER BY`
+  - 데이터 순위 만들기: `RANK() OVER()`, `DENSE_RANK() OVER()`, `ROW_NUMBER() OVER()`
+  - 문자형 데이터를 다루는 함수
+  - 숫자형 데이터를 다루는 함수
+  - 날짜형 데이터를 다루는 함수
