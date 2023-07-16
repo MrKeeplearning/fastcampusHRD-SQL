@@ -19,3 +19,8 @@
   - 별명 붙이기: `ALIAS`
   - 데이터 일부만 가져오기: `LIMIT`
   - 중복 제거: `DISTINCT`
+
+- [Day04. 조건에 맞는 데이터 가져오기](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day04/sql_day04.md)
+  - `WHERE`, `BETWEEN`, `IN`
+  - `LIKE`의 와일드카드
+  - `IS NULL` `IS NOT NULL`
