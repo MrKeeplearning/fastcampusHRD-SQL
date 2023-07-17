@@ -31,3 +31,11 @@
   - 문자형 데이터를 다루는 함수
   - 숫자형 데이터를 다루는 함수
   - 날짜형 데이터를 다루는 함수
+
+- [Day06. 데이터 그룹화하기](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day06/sql_day06.md)
+  - 데이터 그룹화: `GROUP BY`
+  - 그룹에 조건을 주는 방법: `HAVING`
+  - 다양한 그룹 함수 알아보기
+    - `COUNT([컬럼 이름])`, `COUNT(*)`, `COUNT(1)`
+    - `SUM`, `AVG`, `MIN`, `MAX`
+  - 쿼리의 실행 순서
