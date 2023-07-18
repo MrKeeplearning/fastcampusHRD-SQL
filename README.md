@@ -13,17 +13,23 @@
     - `INSERT INTO VALUES`
     - `DELETE FROM WHERE`
     - `UPDATE SET WHERE`
+  - [DAY02 MISSION1](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day02/mission1.sql)
+  - [DAY02 MISSION2](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day02/mission2.sql)
+  - [DAY02 MISSION3](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day02/mission3.sql)
+  - [DAY02 MISSION4](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day02/mission4.sql)
 
 - [Day03. 데이터 가져오기](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day03/sql_day03.md)
   - `SELECT`, `FROM`
   - 별명 붙이기: `ALIAS`
   - 데이터 일부만 가져오기: `LIMIT`
   - 중복 제거: `DISTINCT`
+  - [DAY03 MISSION](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day03/day03_mission.sql)
 
 - [Day04. 조건에 맞는 데이터 가져오기](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day04/sql_day04.md)
   - `WHERE`, `BETWEEN`, `IN`
   - `LIKE`의 와일드카드
   - `IS NULL` `IS NOT NULL`
+  - [DAY04 MISSION](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day04/day04_mission.sql)
 
 - [Day05. 원하는 데이터 만들기](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day05/sql_day05.md)
   - 정렬: `ORDER BY`
@@ -31,6 +37,8 @@
   - 문자형 데이터를 다루는 함수
   - 숫자형 데이터를 다루는 함수
   - 날짜형 데이터를 다루는 함수
+  - [DAY05 MISSION1](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day05/day05_mission1.sql)
+  - [DAY05 MISSION2](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day05/day05_mission2.sql)
 
 - [Day06. 데이터 그룹화하기](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day06/sql_day06.md)
   - 데이터 그룹화: `GROUP BY`
@@ -39,3 +47,12 @@
     - `COUNT([컬럼 이름])`, `COUNT(*)`, `COUNT(1)`
     - `SUM`, `AVG`, `MIN`, `MAX`
   - 쿼리의 실행 순서
+  - [DAY06 MISSION1](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day06/day06_mission1.sql)
+  - [DAY06 MISSION2](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day06/day06_mission2.sql)
+
+- [Day07. 규칙 만들기](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day07/sql_day07.md)
+  - 조건 만들기: `IF`, `IFNULL`
+  - 여러 조건 한 번에 만들기: `CASE`
+  - 함수 생성하기
+  - [DAY07 MISSION1](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day07/day07_mission1.sql)
+  - [DAY07 MISSION2](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day07/day07_mission2.sql)

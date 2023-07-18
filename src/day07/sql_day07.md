@@ -79,17 +79,17 @@ END
 
 ```mysql
 select name,
-case
-	when attack >= 100 then 'very strong'
-    when attack >= 60 then 'strong'
-    else 'weak'
-end as attack_class,
-type,
-case type
-	when 'bug' then 'grass'
-    when 'electric' then 'water'
-    when 'grass' then 'bug'
-end as rival_type
+       case
+         when attack >= 100 then 'very strong'
+         when attack >= 60 then 'strong'
+         else 'weak'
+         end as attack_class,
+       type,
+       case type
+         when 'bug' then 'grass'
+         when 'electric' then 'water'
+         when 'grass' then 'bug'
+         end as rival_type
 from mypokemon;
 ```
 
