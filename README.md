@@ -56,3 +56,13 @@
   - 함수 생성하기
   - [DAY07 MISSION1](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day07/day07_mission1.sql)
   - [DAY07 MISSION2](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day07/day07_mission2.sql)
+
+- [Day08. 테이블 합치기](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day08/sql_day08.md)
+  - JOIN의 기본 설정 `INNER JOIN`
+  - 한쪽을 기준으로 테이블 합치기
+    - `LEFT OUTER JOIN`
+    - `RIGHT OUTER JOIN`
+    - `FULL OUTER JOIN`
+  - `CROSS JOIN`, `SELF JOIN`
+  - [DAY08 MISSION1](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day08/day08_mission1.sql)
+  - [DAY08 MISSION2](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day08/day08_mission2.sql)
