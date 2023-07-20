@@ -26,7 +26,7 @@ where 조건식;
 ```
 
 <p align="center">
-  <img src="/src/resources/day10_select_subquery_table.png">
+  <img src="/src/resources/day10_select_subquery_table.png" width="700">
 </p>
 
 위와 같이 pokemon 데이터베이스가 있을 때 피카츄의 번호, 영문 이름, 키를 가져오는 SQL문은 다음과 같이 작성할 수 있다.
@@ -62,7 +62,7 @@ where 조건식;
 ```
 
 <p align="center">
-  <img src="/src/resources/day10_select_subquery_table.png">
+  <img src="/src/resources/day10_select_subquery_table.png" width="700">
 </p>
 
 ```mysql
