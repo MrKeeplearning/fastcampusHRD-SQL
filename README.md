@@ -66,3 +66,9 @@
   - `CROSS JOIN`, `SELF JOIN`
   - [DAY08 MISSION1](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day08/day08_mission1.sql)
   - [DAY08 MISSION2](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day08/day08_mission2.sql)
+
+- [Day09. 여러 테이블을 한 번에 다루기](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day09/sql_day09.md)
+  - UNION과 UNION ALL
+  - MySQL에서 교집합(INTERSECT)과 차집합(MINUS)을 표현하는 방법
+  - [DAY09 MISSION1](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day09/day09_mission1.sql)
+  - [DAY09 MISSION2](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day09/day09_mission2.sql)
