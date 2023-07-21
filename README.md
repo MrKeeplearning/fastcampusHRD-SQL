@@ -81,3 +81,11 @@
     - 주요연산자: IN, ALL, ANY, EXISTS, NOT EXISTS
   - [Day10 mission1](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day10/day10_mission1.sql)
   - [Day10 mission2](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day10/day10_mission2.sql)
+
+- [Day11. MySQL 고급 기능](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day11/sql_day11.md)
+  - 제약 조건: NOT NULL, UNIQUE, DEFAULT, PRIMARY KEY, FOREIGN KEY
+  - 데이터 제어어 DCL: GRANT, REVOKE
+    - 사용자 확인하기
+    - 사용자 생성 및 삭제하기
+    - 권한 부여하기
+  - 트랜잭션과 TCL: COMMIT, ROLLBACK, SAVEPOINT
