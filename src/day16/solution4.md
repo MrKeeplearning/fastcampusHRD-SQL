@@ -101,10 +101,73 @@ select date_format(A.visited_at - interval 9 hour, '%Y-%m-%d') as d_date,
 from fastcampus.tbl_visit A
 left join fastcampus.tbl_visit B
 on A.customer_id = B.customer_id
+# 시간이 아니라 1 day 차이가 나면 다음 날 들어온 것으로 간주한다.
+# 현재 포맷팅에서 시간은 표현하지 않기 때문에 '일'만 바뀌면 다음 날로 간주할 수 있다.
 and date_format(A.visited_at - interval 9 hour, '%Y-%m-%d') = date_format(B.visited_at - interval 9 hour - interval 1 day, '%Y-%m-%d')
 
 where A.visited_at >= '2020-07-01'
   and A.visited_at < '2020-08-01'
 
 group by 1;
+```
+
+<p align="center">
+  <img src="/src/resources/day16_q20.png">
+</p>
+
+<br/>
+
+## Q21
+
+- **우리 서비스는 신규 유저가 많나요? 기존 유저가 많나요?**
+- **유저들이 가입한 기간별로 그룹지어 고객 분포가 어떤지 알려주세요. DAU 기준으로 부탁합니다.**
+- DAU를 서비스의 나이를 기준으로 분류한다. 1년 이상된 유저인지, 2년 이상된 유저인지 등 service age를 고려해야 한다.
+- 전체 유저가 100명이고 2년 이상된 유저가 20명일 때 DAU는 20%가 되는 것처럼 service age를 기준으로 분류해야 한다.
+
+### 접근 방법
+- `tbl_visit` 테이블의 방문기록을 일자별로 계산.
+- 각 일자별로 고객의 `last_visit`을 체크.
+- 해당 고객의 계정 생성일자를 `tbl_customer`테이블에서 가져옴.
+- `last_visit`에서 `created_at`을 빼면 특정 날짜의 고객의 service age를 알 수 있다.
+
+### 최종 결과
+
+```mysql
+WITH tbl_visit_by_joined as (
+	SELECT 
+		DATE_FORMAT(A.visited_at - INTERVAL 9 HOUR, '%Y-%m-%d') AS d_date,
+		A.customer_id,
+		B.created_at AS d_joined,
+		MAX(A.visited_at) AS last_visit,
+		DATEDIFF(MAX(A.visited_at), B.created_at) AS date_diff
+	FROM
+		fastcampus.tbl_visit A
+			LEFT JOIN
+		fastcampus.tbl_customer B ON A.customer_id = B.customer_id
+	WHERE
+		A.visited_at >= '2020-07-01'
+			AND A.visited_at < '2020-08-01'
+	GROUP BY 1 , 2 , 3
+)
+
+select A.d_date,
+	   case when A.date_diff >= 730 then '2년 이상'
+			when A.date_diff >= 365 then '1년 이상'
+            when A.date_diff >= 183 then '6개월 이상'
+            when A.date_diff >= 91 then '3개월 이상'
+            when A.date_diff >= 30 then '1개월 이상'
+            else '1개월 미만'
+            end as segment,
+	   B.all_users as all_users,
+	   count(A.customer_id) as segment_users,
+       round(count(A.customer_id) / B.all_users * 100, 2) as per
+from tbl_visit_by_joined A
+left join (select d_date,
+				  count(customer_id) as all_users
+		   from tbl_visit_by_joined
+           group by 1) B
+on A.d_date = B.d_date
+
+group by 1, 2, 3
+order by 1, 2;
 ```
