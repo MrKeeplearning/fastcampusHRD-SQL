@@ -36,6 +36,39 @@ where visited_at like '2020-07%';
 - 구매율: 구매유저 수 / 전체 활성유저 수
 - Active 유저가 100명 있다면 그 중에서 몇 명이 구매를 한 유저인지 알고 싶은 것이다.
 
+### 최종 결과
+
+강의에서는 '구매 유저 수'와 '전체 활성 유저 수'를 따로 구하고 직접 계산하는 방식을 택했지만, with문을 사용하면 하나의 쿼리 안에서 해결할 수도 있다.
+
+```mysql
+# 2020년 7월의 Paying Rate구하기
+WITH july_purchased AS (
+	SELECT 
+		COUNT(DISTINCT customer_id) AS purchased_user
+	FROM
+		fastcampus.tbl_purchase
+	WHERE
+		purchased_at LIKE '2020-07-%'
+), july_active_user AS (
+	SELECT 
+		COUNT(DISTINCT customer_id) AS active_user
+	FROM
+		tbl_visit
+	WHERE
+		visited_at LIKE '2020-07-%'
+)
+
+SELECT 
+    ROUND(july_purchased.purchased_user / july_active_user.active_user * 100, 2) AS paying_rate
+FROM
+    july_purchased,
+    july_active_user;
+```
+
+<p align="center">
+    <img src="/src/resources/day13_q3.png">
+</p>
+
 ## Q4. 2020년 7월에 구매 유저의 월 평균 구매금액은 어떻게 되나요?
 
 - 객단가(ARPPU): Average Revenue per Paying User

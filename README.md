@@ -89,3 +89,52 @@
     - 사용자 생성 및 삭제하기
     - 권한 부여하기
   - 트랜잭션과 TCL: COMMIT, ROLLBACK, SAVEPOINT
+
+- [Day13. 서비스 이해 기본](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day13/solution1.md)
+  - [SQL 파일 바로가기](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day13/solution1.sql)
+  - **Q1**: 7월의 총 Revenue구하기
+  - **Q2**: 7월의 MAU 구하기
+    - MAU를 구하는 것은 총 방문횟수가 아니라 active user의 수를 구하는 것이기 때문에 `distinct`를 활용해야 한다.
+  - **Q3**: Active User의 구매율(Paying Rate)구하기
+    - 구매율: 구매 유저 수 / 전체 활성 유저 수
+  - **Q4**: 객단가(ARPPU, Average Revenue per Paying User) 계산하기
+  - **Q5**: 가장 많이 구매한 고객 TOP3와 TOP10~15에 해당하는 고객 추출하기
+    - `LIMIT`키워드와 함께 `OFFSET`을 사용하면 OFFSET 뒤에 있는 수만큼 건너뛰고 시작한다.
+    - `LIMIT 6 OFFSET 9`이라는 제약조건이 있으면 10번째 ROW부터 시작을 하고 10번째부터 15번째 ROW만 가져온다.
+
+- [Day14. 날짜와 시간별 분석](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day14/solution2.md)
+  - [SQL 파일 바로가기](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day14/solution2.sql)
+  - 💡SELECT절에 집계함수가 있을 때는 집계함수를 제외한 나머지 컬럼에 대해서는 꼭 `GROUP BY` 절에 포함시키자.
+  - **Q6**: 평균 DAU(Daily Active User) 구하기
+    - `DATE_FORMAT([날짜 정보를 담은 컬럼명] - interval 9 hour, '%Y-%m-%d)`
+    - 날짜 정보를 포맷팅할 때는 정확한 시간을 표현하기 위해서 기준이 되는 시간에서 9시간(KST와 UTC의 시간 차이)을 빼야 한다.
+  - **Q7**: WAU(Weekly Active User) 구하기
+    - Date Format 함수의 `%U`는 입력한 날짜가 해당 연도의 몇 번째 주인지 포맷팅하는 역할을 한다.
+  - **Q8**: Daily Revenue 구하기
+  - **Q9**: Weekly Revenue 구하기
+  - **Q10**: 요일별 Daily Revenue구하기. `%w`와 `%W`의 차이.
+  - **Q11**: 시간대별 시간당 Revenue를 구하기
+  - **Q12**: 요일 및 시간대별 Revenue 구하기
+
+- [Day15. 유저 세그먼트별 분석 & 매출 관련 추가 분석](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day15/solution3.md)
+  - [SQL 파일 바로가기](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day15/solution3.sql)
+  - **Q13**
+    - 성별, 연령별 유저 숫자를 확인하고 어떤 세그먼트에 가장 많이 분포하는지 찾아내기
+    - null값을 처리하는 방법: `IS NULL`보다 `LENGTH([컬럼 이름]) < 1`를 사용하자.
+  - **Q14**
+    - 세그먼트별 분포도 확인하기
+    - `concat()`함수로 컬럼 및 문자열을 연결하기
+  - **Q15**: 집계함수를 활용해서 성별에 따른 구매 건수와 총 Revenue 구하기
+  - **Q16**: 집계함수와 CASE-WHEN을 활용해서 성별과 연령대에 따른 구매 건수와 총 Revenue 구하기
+  - **Q17**: 일별 매출의 전일 대비 증감폭과 증감률 구하기
+    - WITH문을 사용해서 서브쿼리를 임시테이블처럼 사용
+    - WINDOW함수 `LAG()`: 이전 행의 값 가져오기
+    - WINDOW함수 `LEAD()`: 특정 위치의 행을 가져오기
+  - **Q18**: 일별 구매 금액 기준 가장 많이 지출한 고객 TOP3 추출하기
+    - `DENSE_RANK() OVER`를 활용해서 순위 매기기
+
+- [Day16. 프로덕트 분석 심화](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day16/solution4.md)
+  - [SQL 파일 바로가기](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day16/solution4.sql)
+  - **Q19**: 신규 유저의 결제 전환율(Paying Conversion within 1 day) 구하기
+  - **Q20**: 서비스 재방문률(Day 1 Retention) 구하기
+  - **Q21**: Service Age 확인하기. 충성 고객층이 얼마나 되는가?

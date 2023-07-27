@@ -171,3 +171,7 @@ on A.d_date = B.d_date
 group by 1, 2, 3
 order by 1, 2;
 ```
+
+<p align="center">
+  <img src="/src/resources/day16_q21.png">
+</p>
