@@ -138,3 +138,10 @@
   - **Q19**: 신규 유저의 결제 전환율(Paying Conversion within 1 day) 구하기
   - **Q20**: 서비스 재방문률(Day 1 Retention) 구하기
   - **Q21**: Service Age 확인하기. 충성 고객층이 얼마나 되는가?
+
+- Day17. Hacker Rank 문제풀이 - Aggregation
+  - [The Blunder](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/The%20Blunder/the_blunder.md)
+  - [Top Earners](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/Top%20Earners/top_earners.md)
+  - [Weather Observation Station 15](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/Weather%20Observation%20Station%2015/solution.sql)
+  - [Weather Observation Station 19](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/Weather%20Observation%20Station%2019/solution.sql)
+  - [Weather Observation Station 20](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/Weather%20Observation%20Station%2020/weather_observation_station_20.md)
