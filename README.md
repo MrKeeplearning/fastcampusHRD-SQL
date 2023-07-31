@@ -4,6 +4,8 @@
 
 <br/>
 
+## 1. SQL 기초
+
 - [Day02. 데이터베이스 다루기](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day02/sql_day02.md)
   - 데이터 타입: 숫자형, 문자형, 날짜형
   - 데이터 타입 변환: `CAST`, `CONVERT`, `DATE_FORMAT`
@@ -90,6 +92,8 @@
     - 권한 부여하기
   - 트랜잭션과 TCL: COMMIT, ROLLBACK, SAVEPOINT
 
+## 2. 실무 문제 풀이
+
 - [Day13. 서비스 이해 기본](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day13/solution1.md)
   - [SQL 파일 바로가기](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day13/solution1.sql)
   - **Q1**: 7월의 총 Revenue구하기
@@ -139,9 +143,22 @@
   - **Q20**: 서비스 재방문률(Day 1 Retention) 구하기
   - **Q21**: Service Age 확인하기. 충성 고객층이 얼마나 되는가?
 
-- Day17. Hacker Rank 문제풀이 - Aggregation
-  - [The Blunder](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/The%20Blunder/the_blunder.md)
-  - [Top Earners](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/Top%20Earners/top_earners.md)
-  - [Weather Observation Station 15](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/Weather%20Observation%20Station%2015/solution.sql)
-  - [Weather Observation Station 19](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/Weather%20Observation%20Station%2019/solution.sql)
-  - [Weather Observation Station 20](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/Weather%20Observation%20Station%2020/weather_observation_station_20.md)
+## 3. HackerRank 문제 풀이
+
+- Day17. HackerRank 문제풀이 - Aggregation
+  - [The Blunder](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/Aggregation/The%20Blunder/the_blunder.md)
+  - [Top Earners](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/Aggregation/Top%20Earners/top_earners.md)
+  - [Weather Observation Station 15](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/Aggregation/Weather%20Observation%20Station%2015/solution.sql)
+  - [Weather Observation Station 19](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/Aggregation/Weather%20Observation%20Station%2019/solution.sql)
+  - [Weather Observation Station 20](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/Aggregation/Weather%20Observation%20Station%2020/weather_observation_station_20.md)
+
+- Day18. HackerRank 문제풀이 - Advanced Select
+  - [Type of Triangle](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/Advanced%20Select/Type%20of%20Triangle/type_of_triangle.md)
+  - [The PADS](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/Advanced%20Select/The%20PADS/solution.sql)
+  - [Occupations](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/Advanced%20Select/Occupations/occupations.md)
+  - [Binary Tree Nodes](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/Advanced%20Select/Binary%20Tree%20Nodes/binary_tree_nodes.md)
+  - [New Companies](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/Advanced%20Select/New%20Companies/new_companies.md)
+
+- Day19. HackerRank 문제풀이 - Basic Join
+  - [Average Population of Each Continent](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/Basic%20Join/Average%20Population%20of%20Each%20Continent/average_population_of_each_continent.md)
+  - [The Report](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/Basic%20Join/The%20Report/the_report.md)
