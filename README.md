@@ -92,6 +92,8 @@
     - 권한 부여하기
   - 트랜잭션과 TCL: COMMIT, ROLLBACK, SAVEPOINT
 
+<br/>
+
 ## 2. 실무 문제 풀이
 
 - [Day13. 서비스 이해 기본](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/day13/solution1.md)
@@ -142,6 +144,8 @@
   - **Q19**: 신규 유저의 결제 전환율(Paying Conversion within 1 day) 구하기
   - **Q20**: 서비스 재방문률(Day 1 Retention) 구하기
   - **Q21**: Service Age 확인하기. 충성 고객층이 얼마나 되는가?
+
+<br/>
 
 ## 3. HackerRank 문제 풀이
 
