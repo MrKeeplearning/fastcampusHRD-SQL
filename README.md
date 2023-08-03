@@ -166,3 +166,7 @@
 - Day19. HackerRank 문제풀이 - Basic Join
   - [Average Population of Each Continent](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/Basic%20Join/Average%20Population%20of%20Each%20Continent/average_population_of_each_continent.md)
   - [The Report](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/Basic%20Join/The%20Report/the_report.md)
+
+- Day20. HackerRank 문제풀이 - Advanced Join
+  - [Placements](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/Advanced%20Join/Placements/placements.md)
+  - [SQL Project Planning](https://github.com/MrKeeplearning/fastcampusHRD-SQL/blob/main/src/hackerrank/Advanced%20Join/SQL%20Project%20Planning/sql_project_planning.md)
